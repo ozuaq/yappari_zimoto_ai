@@ -1,10 +1,11 @@
 {% extends 'mysite/base.html' %}
 {% load static %}
 
-{% block title %}sample{% endblock title %}
+{% block title %}map_zoomout{% endblock title %}
 
 {% block content %}
-<p>皆さん賞取りましょう！</p>
+<p id="mouse_position"></p>
+<p id="pin_position"></p>
 
 <!-- 1087 × 827 ピクセル -->
 <canvas id="map" width="1087" height="827">map zoom out</canvas>
@@ -13,11 +14,17 @@
 {{ pin_list|json_script:"pin_list"}}
 {% endblock content %}
 
+{% block cdn %}
+
+{% endblock cdn %}
+<script src="https://cdn.jsdelivr.net/npm/vue@2.7.11"></script>
 {% block script %}
 <script>
     // jsのコードを書くところ
     console.log('hello world');
 
+    var mouse_position = document.getElementById("mouse_position");
+    var pin_position = document.getElementById("pin_position");
     const board = document.getElementById("map");
     const ctx = board.getContext("2d");
 
@@ -27,16 +34,24 @@
         ctx.drawImage(map, 0, 0);
     }
 
+    board.addEventListener("mousemove", (e) => {
+        var rect = e.target.getBoundingClientRect();
+        var x = e.clientX - rect.left - 47;
+        var y = e.clientY - rect.top - 85;
+        mouse_position.innerHTML = "マウスの位置 x: " + x + ",  y: " + y;
+    });
+
     board.addEventListener("click", (e) => {
         var rect = e.target.getBoundingClientRect();
-        var x = e.clientX - rect.left;
-        var y = e.clientY - rect.top;
+        var x = e.clientX - rect.left - 47;
+        var y = e.clientY - rect.top - 85;
 
         var pinImg = new Image();
         // 97 × 96 ピクセル
         pinImg.src = "/static/mysite/image/pin_pink.png";
         pinImg.onload = () => {
-            ctx.drawImage(pinImg, x-47, y-85);
+            ctx.drawImage(pinImg, x, y);
+            pin_position.innerHTML = "ピン留めした位置 x: " + x + ",  y: " + y;
         }
     });
 </script>

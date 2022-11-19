@@ -17,6 +17,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('inet_b_hackathon/admin/', admin.site.urls),
     path('inet_b_hackathon/treasure_map/', include('mysite.urls')),
 ]
