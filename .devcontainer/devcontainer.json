@@ -4,5 +4,19 @@
         "docker-compose.yml"
     ],
     "service": "webapp",
-    "workspaceFolder": "/inet_b"
+	"workspaceFolder": "/inet_b",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"njpwerner.autodocstring",
+				"mgmcdermott.vscode-language-babel",
+				"streetsidesoftware.code-spell-checker",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"VisualStudioExptTeam.intellicode-api-usage-examples",
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"mosapride.zenkaku"
+			]
+		}
+	}
 }

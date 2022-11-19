@@ -10,7 +10,7 @@
 <canvas id="map" width="1087" height="827">map zoom out</canvas>
 
 <!-- jsに渡す -->
-# {{ pin_list|json_script:"pin_list"}}
+{{ pin_list|json_script:"pin_list"}}
 {% endblock content %}
 
 {% block script %}
