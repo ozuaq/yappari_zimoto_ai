@@ -1,0 +1,43 @@
+{% extends 'mysite/base.html' %}
+{% load static %}
+
+{% block title %}sample{% endblock title %}
+
+{% block content %}
+<p>皆さん賞取りましょう！</p>
+
+<!-- 1087 × 827 ピクセル -->
+<canvas id="map" width="1087" height="827">map zoom out</canvas>
+
+<!-- jsに渡す -->
+# {{ pin_list|json_script:"pin_list"}}
+{% endblock content %}
+
+{% block script %}
+<script>
+    // jsのコードを書くところ
+    console.log('hello world');
+
+    const board = document.getElementById("map");
+    const ctx = board.getContext("2d");
+
+    const map = new Image();
+    map.src = "/static/mysite/image/map_zoom_out.png";
+    map.onload = () => {
+        ctx.drawImage(map, 0, 0);
+    }
+
+    board.addEventListener("click", (e) => {
+        var rect = e.target.getBoundingClientRect();
+        var x = e.clientX - rect.left;
+        var y = e.clientY - rect.top;
+
+        var pinImg = new Image();
+        // 97 × 96 ピクセル
+        pinImg.src = "/static/mysite/image/pin_pink.png";
+        pinImg.onload = () => {
+            ctx.drawImage(pinImg, x-47, y-85);
+        }
+    });
+</script>
+{% endblock script %}
