@@ -65,7 +65,7 @@ python manage.py migrate
 python manage.py runserver 0.0.0.0:8887
 ```
 ### **サイトにアクセス**
-http://127.0.0.1/inet_b_hackathon/treasure_map/zoom_out_map/
+http://52.195.12.37//inet_b_hackathon/treasure_map/zoom_out_map/
 
 ## Git
 ### **gitでの作業方法**
