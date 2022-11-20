@@ -17,6 +17,8 @@ class SpotInfo(models.Model):
     appeal = models.CharField(max_length=500)
     good = models.IntegerField(default=0)
     visit = models.IntegerField(default=0)
+    position_x = models.IntegerField(default=0)
+    position_y = models.IntegerField(default=0)
     
 class AppUser(models.Model):
     point = models.IntegerField(default=0)
