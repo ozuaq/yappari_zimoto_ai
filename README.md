@@ -1,4 +1,20 @@
-# 宝探しマップ(仮名)
+# やっぱり地元愛
+## チームメンバ
+- プロダクトオーナー: 池上太一(いっちー)[IkegamiXYZ](https://github.com/IkegamiXYZ)
+- テックリード: 尾崎克明(ざっきー)[ozuaq](https://github.com/ozuaq)
+- スクラムマスター: 倉持慧輔[]()、鈴木中穂美(ずっきー)[nsuzuki41](https://github.com/nsuzuki41)
+
+## プロダクト案
+- [コンセプト、概要、展望]()
+
+## 使用予定技術
+- サーバ: [Django](https://www.djangoproject.com/)
+- フロント: [React](https://ja.reactjs.org/)
+- ライブラリ:
+  - JavaScript: [Leaflet](https://leafletjs.com/)
+- オープンデータ:
+  - [OpenStreetMap](https://www.openstreetmap.org/)
+
 ## セットアップ
 **docker環境の構築**
 
