@@ -5,11 +5,12 @@
 - スクラムマスター: 倉持慧輔[]()、鈴木中穂美(ずっきー)[nsuzuki41](https://github.com/nsuzuki41)
 
 ## プロダクト案
-- [コンセプト、概要、展望]()
+- [コンセプト、概要、展望](https://drive.google.com/file/d/1ASZznrLixWlXT2C6rCwK6eVaFITpxh-S/view?usp=sharing)
 
 ## 使用予定技術
-- サーバ: [Django](https://www.djangoproject.com/)
+- バックエンド: [Django](https://www.djangoproject.com/)
 - フロント: [React](https://ja.reactjs.org/)
+- スポット訪問登録: Androidアプリ
 - ライブラリ:
   - JavaScript: [Leaflet](https://leafletjs.com/)
 - オープンデータ:
