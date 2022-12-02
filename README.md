@@ -2,7 +2,7 @@
 ## チームメンバ
 - プロダクトオーナー: 池上太一(いっちー)[IkegamiXYZ](https://github.com/IkegamiXYZ)
 - テックリード: 尾崎克明(ざっきー)[ozuaq](https://github.com/ozuaq)
-- スクラムマスター: 倉持慧輔[]()、鈴木中穂美(ずっきー)[nsuzuki41](https://github.com/nsuzuki41)
+- スクラムマスター: 倉持慧輔(もっちー)[]()、鈴木中穂美(ずっきー)[nsuzuki41](https://github.com/nsuzuki41)
 
 ## プロダクト案
 - [コンセプト、概要、展望](https://drive.google.com/file/d/1ASZznrLixWlXT2C6rCwK6eVaFITpxh-S/view?usp=sharing)
