@@ -7,14 +7,15 @@
 ## プロダクト案
 - [コンセプト、概要、展望](https://drive.google.com/file/d/1ASZznrLixWlXT2C6rCwK6eVaFITpxh-S/view?usp=sharing)
 
-## 使用予定技術
-- バックエンド: [Django](https://www.djangoproject.com/)
-- フロント: [React](https://ja.reactjs.org/)
-- スポット訪問登録: Androidアプリ
-- ライブラリ:
-  - JavaScript: [Leaflet](https://leafletjs.com/)
+## 使用技術
+- Webフレームワーク: [Django](https://www.djangoproject.com/)
 - オープンデータ:
-  - [OpenStreetMap](https://www.openstreetmap.org/)
+  - マップ: [OpenStreetMap](https://www.openstreetmap.org/)
+- ライブラリ・API:
+  - Webページの動的な描画: [Vue.js](https://ja.vuejs.org/)
+  - マップ操作: [Leaflet](https://leafletjs.com/)
+  - 位置情報取得: [Geolocation API](https://developer.mozilla.org/ja/docs/Web/API/Geolocation_API)
+  - 音声読み上げ: [Web Speech API](https://developer.mozilla.org/ja/docs/Web/API/Web_Speech_API)
 
 ## セットアップ
 **docker環境の構築**
